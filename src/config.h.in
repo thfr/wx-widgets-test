@@ -1,0 +1,4 @@
+// the configured options and settings
+#define WX_WIDGESTS_TEST_VERSION_MAJOR @Tutorial_VERSION_MAJOR@
+#define WX_WIDGESTS_TEST_VERSION_MINOR @Tutorial_VERSION_MINOR@
+#define WX_WIDGESTS_TEST_VERSION_PATCH @Tutorial_VERSION_PATCH@
