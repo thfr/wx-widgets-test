@@ -5,7 +5,9 @@ project(wxWidgetsTest VERSION 0.0.1)
 # compilation settings
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED TRUE)
-set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Wshadow -Wall -Wextra")
+if(NOT MSVC)
+	set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Wshadow -Wall -Wextra")
+endif(NOT MSVC)
 # set(CMAKE_CXX_CLANG_TIDY clang-tidy -checks=-*,readability-*)
 set(CMAKE_EXPORT_COMPILE_COMMANDS TRUE)
 
